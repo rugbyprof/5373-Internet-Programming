@@ -1,4 +1,5 @@
-### Digital Ocean
+### Digital Ocean - Building your server
+#### Due: 23 Jan by 5:00 p.m.
 
 -----
 ![](https://d3vv6lp55qjaqc.cloudfront.net/items/2J0S130Y0Y0F3D393g07/Digital-Ocean-Logo1.png?X-CloudApp-Visitor-Id=1094421)
