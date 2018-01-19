@@ -1,4 +1,4 @@
-## Php Overview
+## Day 2 - General intro to php
 
 ### Php Variables
 
@@ -53,8 +53,6 @@ var_dump($stuff);
 ```
 
 ### Different ways to open files
-
-
 
 ___file()___
 ```php
