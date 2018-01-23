@@ -49,29 +49,30 @@ if ($result = $db->query("SELECT Name FROM City LIMIT 10")) {
 
 
 // 1st Query
-$result = $db->query("call getUsers()");
+$result = $db->query("INSERT INTO table_name VALUES ('one','two','three')");
 if ($result) {
     // Cycle through results
-    while ($row = $result->fetch_object()) {
+    while ($row = $result->fetch_assoc()) {
         $user_arr[] = $row;
     }
     // Free result set
     $result->close();
-    $db->next_result();
+}else{
+    echo ($db->error);
 }
 
 // 2nd Query
-$result = $db->query("call getGroups()");
+$result = $db->query("SELECT * FROM some_table");
 if ($result) {
     // Cycle through results
-    while ($row = $result->fetch_object()) {
+    while ($row = $result->fetch_assoc()) {
         $group_arr[] = $row;
     }
     // Free result set
     $result->close();
-    $db->next_result();
 } else
     echo ($db->error);
+}
 
 // Close connection
 $db->close();
