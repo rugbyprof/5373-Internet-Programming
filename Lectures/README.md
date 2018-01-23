@@ -3,4 +3,4 @@
  | ------------|------------|------------|
  | [L01](./L01) | [ Day 2 ](./L01) | [ General intro to php](./L01) | [L01](./L01) | [ Php Variables](./L01) | [L01](./L01) | [ Some variable examples:](./L01) | [L01](./L01) | [ Different ways to open files](./L01) |
 
-<sup>Last Updated: 2018-01-22 (Mon @ 11:28)</sup>
+<sup>Last Updated: 2018-01-23 (Tue @ 09:56)</sup>
