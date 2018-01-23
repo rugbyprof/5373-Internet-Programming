@@ -17,7 +17,11 @@ Our approach to learning internet programming is a little different. You might t
 
 In the above example, the `id` could be used as a primary key OR the `email` address since they are unique to each row. Even though the names are all unique, we don't use those as primary keys since there can be two individuals with the same name. 
 
-## Connecting Via Php
+#### More To Come 
+
+....
+
+## Connecting To Mysql Via Php
 
 <sub>Source: http://php.net/manual/en/mysqli.query.php </sub>
 ```php
