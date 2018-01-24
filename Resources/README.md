@@ -1,6 +1,7 @@
 ## Resources
 | Folder | Resource | Description|
  | ------------|------------|------------|
+ | [Links](./R01) | [ Links](./R01) |
  | [R01](./R01) | [ Linux Commands ](./R01) | [ Basic overview of common commands](./R01) |
 
-<sup>Last Updated: 2018-01-23 (Tue @ 12:11)</sup>
+<sup>Last Updated: 2018-01-24 (Wed @ 08:57)</sup>
