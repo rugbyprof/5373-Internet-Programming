@@ -1,7 +1,7 @@
 ## Resources
 | Folder | Resource | Description|
  | ------------|------------|------------|
- | [Links](Links) | [ Links]([Links](Links)) |
- | [R01](R01) | [ Linux Commands ]([R01](R01)) | [ Basic overview of common commands]([R01](R01)) |
+ | [Links](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Resources/R01) | [ Links](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Resources/R01) |
+ | [R01](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Resources/R01) | [ Linux Commands ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Resources/R01) | [ Basic overview of common commands](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Resources/R01) |
 
-<sup>Last Updated: 2018-01-26 (Fri @ 09:46)</sup>
+<sup>Last Updated: 2018-01-26 (Fri @ 13:15)</sup>
