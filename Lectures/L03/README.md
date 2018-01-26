@@ -6,46 +6,34 @@ The page below is a combination of PHP and HTML, this the old way of embedding d
 <!doctype html>
 <html lang="en">
 <?php
-
 // A PHP array that holds all GET vars.
 // $_POST holds posted vars (discussed later)
 print_r($_GET);
-
-
 // Get vars are passed like this:
 //     http://domain.com/path/to/file?key1=val1&key2=val2&key3=val3
 // This results in:
 // $_GET['key1'] = val1
 // $_GET['key2'] = val2
 // $_GET['key3'] = val3
-
 // Turn error reporting on during testing (not production)
 error_reporting(1);
-
 $db = new mysqli("localhost", "wine_site", "Mm0g4qkrO6mBoiSe", "wine_site");
-
 // If we have an error connecting to the db, then exit page
 if ($db->connect_errno) {
     printf("Connect failed: %s\n", $db->connect_error);
     exit();
 }
-
 // Variables used in our simple pagination scheme
-
 $rowcount = 10; // default number of records to display
 $offset = 10; // default starting record number
-
 if (array_key_exists('rowcount', $_GET)) {
     $rowcount = $_GET['rowcount'];
 }
-
 if (array_key_exists('offset', $_GET)) {
     $offset = $_GET['offset'];
 }
-
 $prev=$offset-$rowcount;  // problems going below zero (handle later)
 $next=$offset+$rowcount;  // same going above sizeof the data set
-
 ?>
 <head>
     <meta charset="utf-8">
@@ -81,7 +69,6 @@ $next=$offset+$rowcount;  // same going above sizeof the data set
 $sql = "SELECT * FROM wine_reviews LIMIT {$offset} , {$rowcount}";
 echo "{$sql}<br>";
 $result = $db->query($sql);
-
 $id = $offset;
 if ($result) {
     // Cycle through results
