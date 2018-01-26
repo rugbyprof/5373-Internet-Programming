@@ -1,59 +1,84 @@
 ## Displaying Dynamic Data - The old way ...
 
-The page below is a combination of PHP and HTML, this the old way of creating dynamically loaded data onto a webpage. We will quickly forgo this method of displaying data from a database, but it's a pretty straightforward way of doing it, so we start here.
+The page below is a combination of PHP and HTML, this the old way of embedding dynamically loaded data onto a webpage. We will quickly forgo this method of displaying data from a database, but it's a pretty straightforward way of doing it, so we start here.
 
 ```php
 <?php
 
+// A PHP array that holds all GET vars.
+// $_POST holds posted vars (discussed later)
 print_r($_GET);
+
+// If "limit" is NOT a GET variable
+// make the limit 10;
 
 if(!array_key_exists('limit',$_GET)){
     $limit = 10;
 }
 
-error_reporting(1);
-$db = new mysqli("localhost", "wine_site", "Mm0g4qkrO6mBoiSe", "wine_site");
+// Get vars are passed like this:
+//     http://domain.com/path/to/file?key1=val1&key2=val2&key3=val3
+// This results in:
+// $_GET['key1'] = val1
+// $_GET['key2'] = val2
+// $_GET['key3'] = val3
 
-/* check connection */
+// Turn error reporting on during testing (not production)
+error_reporting(1);
+
+//Connect to our local mysql database
+// "localhost" = "the server your on"  ,      "user name"             "password"              "database name"
+$db = new mysqli("localhost",                 "wine_site",            "***********",          "wine_site");
+
+
+// If we have an error connecting to the db, then exit page
 if ($db->connect_errno) {
     printf("Connect failed: %s\n", $db->connect_error);
     exit();
 }
-$limit = 10;
-$start = 10;
+
+// Variables used in our simple pagination scheme
+
+$limit = 10;    // default number of records to display
+$start = 10;    // default starting record number
 
 if(array_key_exists('start',$_GET)){
-    $limit = $_GET['start'];
+    $start = $_GET['start'];
 }
+
+if(array_key_exists('limit',$_GET)){
+    $limit = $_GET['limit'];
+}
+
 ?>
 
 <html>
-
 <head>
     <title>Wine Site</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+    <!-- Include some styling and javascript libraries to assist us making things look better -->
+    <!-- And later, jquery will help make our pages handle events --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 </head>
-
 <body>
     <h1>wine site </h1>
     <div class="container">
-
     <table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Taster</th>
-      <th scope="col">Twitter Handle</th>
-      <th scope="col">Price</th>
-    </tr>
-  </thead>
-  <tbody>
-
-
+    <thead>
+       <tr>
+          <th scope="col">#</th>
+          <th scope="col">Taster</th>
+          <th scope="col">Twitter Handle</th>
+          <th scope="col">Price</th>
+       </tr>
+   </thead>
+   <tbody>
+   
 <?php
+//Get $limit number of rows starting at $start row
 $sql = "SELECT * FROM wine_reviews LIMIT {$limit} , {$start}";
 echo"{$sql}<br>";
 $result = $db->query($sql);
