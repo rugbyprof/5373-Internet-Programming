@@ -4,4 +4,4 @@
  | [A01](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A01) | [ Assignment 1 ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A01) | [ Getting Started](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A01) | [Thursday January 18th by 5:00pm](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A01) |
  | [A02](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A02) | [ Digital Ocean ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A02) | [ Building your server](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A02) | [23 Jan by 5:00 p.m.](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A02) |
 
-<sup>Last Updated: 2018-01-30 (Tue @ 00:38)</sup>
+<sup>Last Updated: 2018-01-30 (Tue @ 00:50)</sup>
