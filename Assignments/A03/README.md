@@ -1,5 +1,5 @@
 ## Backend - Getting your backend ready to host a site.
-## Due - Feb 6<sup>th</sup> by class time.
+Due - Feb 6<sup>th</sup> by class time.
 
 #### Overview
 
