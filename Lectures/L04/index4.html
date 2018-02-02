@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <title>Wine Site</title>
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- Include some styling and javascript libraries to assist us making things look better -->
+    <!-- And later, jquery will help make our pages handle events -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body>
+
+    <h1>wine site </h1>
+    <div class="container">
+        <table id="example" class="table table-striped display" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Taster</th>
+                    <th scope="col">Twitter Handle</th>
+                    <th scope="col"> Price </th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(function () {
+            $.get("https://wtfhw.us/wine_site/app.php", function (data) {
+                $('#example > tbody').html(data);
+                console.log(data);
+                $('#example').DataTable();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
