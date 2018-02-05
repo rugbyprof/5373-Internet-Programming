@@ -6,4 +6,4 @@
  | [L03](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) | [ Displaying Dynamic Data ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) | [ The old way ...](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) | [L03](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) | [<th scope="col"></th>](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) |
  | [L04](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) | [ Lectures L04 ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) | [ No Description](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L04) |
 
-<sup>Last Updated: 2018-02-01 (Thu @ 19:12)</sup>
+<sup>Last Updated: 2018-02-05 (Mon @ 09:46)</sup>
