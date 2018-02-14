@@ -58,6 +58,12 @@ foreach($data_array['data']['children'] as $key => $image){
 - There is a complimentary function called `file_put_contents` that will write a file. 
 - Using them together, you can read and save the earthporn images to your local server.
 - Save your images to a folder called `earth_images`.
-- The item to save is: `[url] => https://url.to.image.jpg`.
-- The name of the image is: `[name] => image name`.
+- Save the thumbnails to a folder called `earth_thumbnails`.
+    - `[thumbnail] => https://thumb.name.jpg`
+- The item to save is: 
+    - `[url] => https://url.to.image.jpg`.
+- The name of the image is: 
+    - `[name] => image name`.
+- ATTENTION: If the url does not have `.jpg` on the end of it, append it. 
+    - `strpos` is a good function to use
 
