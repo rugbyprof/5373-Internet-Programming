@@ -3,7 +3,7 @@ Due: Feb 20th by classtime.
 
 ### Overview
 
-Use PHP to loop through a json object and save an earthPorn image to a local folder.
+Use PHP to loop through a json object and save earthPorn images to a local folder. The curl request below was tested on my laptop at home and should work fine for this purpose.
 
 
 ### Curl Request
