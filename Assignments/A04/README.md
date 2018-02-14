@@ -65,5 +65,5 @@ foreach($data_array['data']['children'] as $key => $image){
 - The name of the image is: 
     - `[name] => image name`.
 - ATTENTION: If the url does not have `.jpg` on the end of it, append it. 
-    - `strpos` is a good function to use
+    - `strpos` is a good function to use to determine if jpg exists in the url.
 
