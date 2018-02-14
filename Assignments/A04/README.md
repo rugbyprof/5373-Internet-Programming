@@ -13,8 +13,9 @@ Use PHP to loop through a json object and save earthPorn images to a local folde
 
 $curl = curl_init();
 
+
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.reddit.com/r/EarthPorn/",
+  CURLOPT_URL => "https://www.reddit.com/r/earthporn/hot.json?limit=100", // Thanks Sam!
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -48,9 +49,8 @@ print_r($data_array);
 - Loop through that array of image objects using a `foreach` loop.
 
 ```php
-foreach($data_array['data']['children'] as $image_num => $image_data){
-
-   // do stuff here
+foreach($data_array['data']['children'] as $key => $image){
+    print_r($image['data']['url']);
 }
 ```
 
