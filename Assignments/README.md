@@ -6,4 +6,8 @@
  | [A03](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A03) | [ Backend ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A03) | [ Getting your backend ready to host a site.](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A03) | [Due - Feb 6<sup>th</sup> by class time.](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A03) |
  | [A04](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) | [ Image Scrape ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) | [ Basic web functionality](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) | [Feb 20th by classtime.](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) |
 
+<<<<<<< HEAD
 <sup>Last Updated: 2018-02-26 (Mon @ 14:58)</sup>
+=======
+<sup>Last Updated: 2018-02-21 (Wed @ 00:02)</sup>
+>>>>>>> b4dabfa5dc1af2929905e3101a533ab66a27cc01
