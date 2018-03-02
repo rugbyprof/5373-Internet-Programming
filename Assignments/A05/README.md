@@ -8,6 +8,10 @@
 ### Overview
 
 Using the existing code from here
+- Unzip in yuor `/var/www/html`
+- Check permissions 
+- Change the `settings.php` to reflect your credentials
+- 
 
 ### Remember
 
