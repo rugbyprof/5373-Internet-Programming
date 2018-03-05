@@ -1,4 +1,3 @@
-
 ## Meme Generator - Multipart Assignment
 
 ### Overview
