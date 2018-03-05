@@ -1,6 +1,6 @@
 
 ## Meme Generator - Part 1
-Due: Friday March 9th by Midnight.
+Due: Friday March 9<sup>th</sup> by Midnight.
 
 
 ### Overview
@@ -22,6 +22,7 @@ You should use bootstraps (or something similar)
 
 
 ### Folder Structure
+
 ```
 .
 ├── app.php
