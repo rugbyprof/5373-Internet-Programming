@@ -28,12 +28,16 @@ You should use bootstraps (or something similar)
 ├── app.php
 ├── class_upload.php
 ├── css
+│   └── ...
 ├── js
+│   └── ...
 ├── log.txt
 ├── settings.php
 ├── upload.html
 ├── uploads
 │   ├── medium
+│   |     └── ...
 │   └── thumbs
+│         └── ...
 └── view_memes.html
 ```
