@@ -41,7 +41,7 @@ You should use bootstraps (or something similar)
         - &#x21b3; seed_db.py
 
 .
-├── &#x21b3; app.php
+├── <img src="https://cl.ly/pvsx/file_icon_64.png" width="24"> app.php
 ├── &#x21b3; class_upload.php
 ├── &#128187; css
 ├── &#128187; js
