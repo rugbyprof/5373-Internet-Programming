@@ -1,7 +1,7 @@
 
-## Meme Generator
+## Meme Generator - Meme website fun
 
-- ***Part 1 Due: ??***
+- ***Part 1 Due: ***
 - ***Part 2 Due: ??***
 - ***Part 3 Due: ??***
 
