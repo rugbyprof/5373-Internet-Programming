@@ -9,14 +9,17 @@ Using the existing code from http://wtfhw.us/meme_gen_pt1.zip, edit the `view_me
 
 <img src="http://i.stack.imgur.com/myiVg.jpg" width="400px">
 
-You should use bootstraps (or something similar)
+You should use bootstraps (or something similar) so that your thumbnails will display in a grid fashion when page is large, and will collapse into a single stacked column when the screen is reduced in width.
 
 ### Some Steps to Follow
 
-- Unzip in your `/var/www/html`
-- Check permissions 
+- Unzip http://wtfhw.us/meme_gen_pt1.zip into your `/var/www/html`
+- Make sure the file permissions are correct.  
+    - 644 for files
+    - 755 for folders
+    - 777 for the `uploads` folder and both of the sub directories within it. 
 - Change the `settings.php` to reflect your credentials
-- 
+- Create a database called 
 
 ### Remember
 
