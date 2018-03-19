@@ -125,4 +125,4 @@ The above snippet assumed there would be a `GET` or a `POST` variable called `ro
 - I can access your site at http://your.ip.address/meme_gen/ and will still see the output from your api.
 - I can call appropriate functions using our new "clean url" for example if I call:
     - https://ur.ip.address/meme_gen/thumbsdir 
-- I will see a dump of your thumbnail images (this is already written in the `getThumbsdirect()` function).
+    - I will see a dump of your thumbnail images (this is already written in the `getThumbsdirect()` function).
