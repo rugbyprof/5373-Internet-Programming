@@ -91,6 +91,11 @@ if(array_key_exists('route',$_GET)){
 The above snippet assumed there would be a `GET` or a `POST` variable called `route` with a correct value that the `switch` statement knows about. Instead, your could make sure the route is the first item after the directory name like: `https://your.ip.address/meme_gen/fileUpload` and then use the `$request_parts` array to find the appropriate `route name`.
 
 
+#### Step 5
+
+- Remember that if you type: `https://your.ip.address/meme_gen` you will most likely see a directory dump (from **step 3**).
+- Fix this so that you will not see a directory dump, but the output of `app.php` (list of possible routes).
+
 ### Folder Structure
 
 - Added .htaccess folder
