@@ -58,13 +58,16 @@ RewriteRule ^.*$ ./app.php
 
 #### Step 4
 
-This will be a little bit up to you to implement. But I will definitely not leave you haning. Lets start with this snippet:
+This step places the necessary code in your `app.php` file to handle "clean urls". You will be responsible for the implementation, but I will definitely not leave you hanging. Lets start with this snippet:
+
+
+First lets get the url that was used to access the page using `$_SERVER['REQUEST_URI']`:
 
 ```php
 $request_parts = explode('/', $_SERVER['REQUEST_URI']); 
 ```
 
-This snippet will turn our request url into an array. For example: `https://your.ip.address/meme_gen/one/two` results in:
+The above snippet will turn our request url into an array. For example: `https://your.ip.address/meme_gen/one/two` results in:
 
 ```
 [
@@ -75,7 +78,7 @@ This snippet will turn our request url into an array. For example: `https://your
 ]
 ``` 
 
-You can use this to now replace this in your app when wanting to choose a route:
+You can use that logic in your `app.php` to choose that appropriate route. Here is what we used before:
 
 ```php
 if(array_key_exists('route',$_GET)){
@@ -85,7 +88,7 @@ if(array_key_exists('route',$_GET)){
 }
 ```
 
-Instead, your could make sure the route is the first item after the directory name like: `https://your.ip.address/meme_gen/fileUpload`
+The above snippet assumed there would be a `GET` or a `POST` variable called `route` with a correct value that the `switch` statement knows about. Instead, your could make sure the route is the first item after the directory name like: `https://your.ip.address/meme_gen/fileUpload` and then use the `$request_parts` array to find the appropriate `route name`.
 
 
 ### Folder Structure
@@ -118,5 +121,8 @@ Instead, your could make sure the route is the first item after the directory na
 
 ### Deliverables
 
-- I can access your site at http://your.ip.address/meme_gen/app.php and will see the output from your api.
-- 
+- I can access your site at http://your.ip.address/meme_gen/app.php and will still see the output from your api.
+- I can access your site at http://your.ip.address/meme_gen/ and will still see the output from your api.
+- I can call appropriate functions using our new "clean url" for example if I call:
+    - https://ur.ip.address/meme_gen/thumbsdir 
+- I will see a dump of your thumbnail images (this is already written in the `getThumbsdirect()` function).
