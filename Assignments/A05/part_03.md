@@ -96,8 +96,13 @@ The above snippet assumed there would be a `GET` or a `POST` variable called `ro
 - Remember that if you type: `https://your.ip.address/meme_gen` you will most likely see a directory dump (from **step 3**).
 - Fix this so that you will not see a directory dump, but the output of `app.php` (list of possible routes).
 - Possible solutions:
-    - create `index.html` or `index.php` to redirect to `app.php` (lookup the php function `header()`)
+    - create `index.html` or `index.php` to redirect to `app.php` 
+        - lookup the php function `header()`
+        - https://php.net/header
     - Fix the `.htaccess` file to redirect to `app.php` when no file name exists.
+        - `^$` matches an "empty string" 
+        - https://perishablepress.com/stupid-htaccess-tricks/
+    
 
 ### Folder Structure
 
