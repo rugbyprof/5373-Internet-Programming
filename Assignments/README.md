@@ -7,4 +7,4 @@
  | [A04](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) | [ Image Scrape ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) | [ Basic web functionality](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) | [Feb 20th by classtime.](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A04) |
  | [A05](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [ Meme Generator ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [ Multipart Assignment](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [A05](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [ Overview](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) |
 
-<sup>Last Updated: 2018-03-25 (Sun @ 19:11)</sup>
+<sup>Last Updated: 2018-03-25 (Sun @ 19:13)</sup>
