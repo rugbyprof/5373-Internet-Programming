@@ -1,5 +1,8 @@
 ## Meme Generator - Part 5
 
+### Decription:
+
+Writing text over the actual image.
 
 ### Overview
 
