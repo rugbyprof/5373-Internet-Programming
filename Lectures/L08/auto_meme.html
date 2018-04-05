@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://codepen.io/wizly/pen/lfqFw -->
+<!-- https://www.w3schools.com/howto/howto_css_image_text.asp -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="./css/demo.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="./css/flexslider.css" type="text/css" media="screen" />
+
+
+    <style>
+        body {
+            padding: 20px;
+            font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        }
+
+        div.wrapper {
+            float: left;
+            /* important */
+            position: relative;
+            /* important(so we can absolutely position the description div */
+        }
+
+        div.topDescription {
+            position: absolute;
+            /* absolute position (so we can position it where we want)*/
+            top: 0px;
+            /* position will be on bottom */
+            left: 0px;
+            width: 100%;
+            /* styling bellow */
+            background-color: black;
+            color: white;
+            opacity: 0.6;
+            /* transparency */
+            filter: alpha(opacity=60);
+            /* IE transparency */
+        }
+
+        div.botDescription {
+            position: absolute;
+            /* absolute position (so we can position it where we want)*/
+            bottom: 0px;
+            /* position will be on bottom */
+            left: 0px;
+            width: 100%;
+            /* styling bellow */
+            background-color: black;
+            color: white;
+            opacity: 0.6;
+            /* transparency */
+            filter: alpha(opacity=60);
+            /* IE transparency */
+        }
+
+        p.description_content {
+            padding: 10px;
+            margin: 0px;
+            font-size: 30px;
+        }
+
+        .meme_text {
+            width: 300px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="slider">
+            <div class="flexslider carousel">
+                <ul class="slides" id="myslides">
+                    <li>
+                        <img src="./uploads/thumbs/1519945749.png" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_lemon.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_donut.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_caramel.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_lemon.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_donut.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_caramel.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_lemon.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_donut.jpg" />
+                    </li>
+                    <li>
+                        <img src="images/kitchen_adventurer_caramel.jpg" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <div class="row">
+            <div id="meme">
+                <img src="toystory_800.png">
+            </div>
+        </div> -->
+        <div class="row">
+            <div class='wrapper'>
+                <!-- image -->
+                <img id="mainMeme" src='https://s30.postimg.org/6q74do2ip/hair_headphone_hearing300.jpg' />
+
+                <div class='topDescription'>
+
+                    <p class='description_content' id="top_text"></p>
+
+                </div>
+                <div class='botDescription'>
+
+                    <p class='description_content' id="bottom_text"></p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label for="exampleFormControlTextarea2">Top Text</label>
+                <textarea class="form-control rounded-0 meme_text" id="top_textbox" rows="3"></textarea>
+            </div <div class="form-group">
+            <label for="exampleFormControlTextarea2">Bottom Text</label>
+            <textarea class="form-control rounded-0 meme_text" id="bottom_textbox" rows="3"></textarea>
+            <input type="submit" name="sendit" id="submit" value="GO!">
+        </div>
+    </div>
+    <div>
+        <img src="" id="result">
+    </div>
+    </div>
+    <!-- FlexSlider -->
+    <script defer src="./js/jquery.flexslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#bottom_text').html("");
+
+            loadThumbs();
+            $('#bottom_textbox').keyup(function (e) {
+                console.log([e.keyCode, e.key]);
+                var txt = $('#bottom_textbox').val();
+                if (e.keyCode == 8) {
+                    $('#bottom_text').html(txt);
+                } else {
+                    $('#bottom_text').append(e.key);
+                }
+
+            })
+            $('#top_textbox').keyup(function (e) {
+                console.log([e.keyCode, e.key]);
+                var txt = $('#top_textbox').val();
+                if (e.keyCode == 8) {
+                    $('#top_text').html(txt);
+                } else {
+                    $('#top_text').append(e.key);
+                }
+
+            })
+
+            $('#submit').click(function () {
+                var data = {
+                    toptext: $('#top_text').html(),
+                    bottomtext: $('#bottom_text').html()
+                };
+                $.post("app.php/saveMeme", data)
+                    .done(function (data) {
+                        $('#result').attr("src", data.SavePath + data.SaveName);
+                    })
+            })
+
+            function loadThumbs() {
+                $('#myslides').html("");
+                var html = "";
+                $.get("https://wtfhw.us/meme_gen/thumbsdir", function (data) {
+                    var count = 0;
+                    for (var k in data) {
+                        if (data.hasOwnProperty(k)) {
+                            html += "<li> <img class= \"memeThumb\" id=\""+count+"\" src=\"" + data[k] + "\"></li>\n";
+                            count++;
+                        }
+                        if (count >= 10) {
+                            break;
+                        }
+                    }
+                    $('#myslides').html(html);
+
+                    $('.memeThumb').click(function(e){
+                        console.log(e);
+                        var src = $(e.currentTarget).attr( "src" );
+                        $('#mainMeme').attr( "src",src );
+                    });
+                    loadFlexslider();
+                });
+            }
+
+            function loadFlexslider() {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    animationLoop: false,
+                    itemWidth: 210,
+                    itemMargin: 5,
+                    pausePlay: true,
+                    start: function (slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+            }
+        });
+    </script>
+    </script>
+</body>
+
+</html>
