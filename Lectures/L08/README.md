@@ -1,0 +1,2 @@
+## Flexslider - Thumbnail viewer code
+
