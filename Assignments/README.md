@@ -8,8 +8,4 @@
  | [A05](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [ Meme Generator ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [ Multipart Assignment](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [A05](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) | [ Overview](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A05) |
  | [A06](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A06) | [ Meme Generator ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A06) | [ Presentations](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A06) | [April 10<sup>th</sup> and 12<sup>th</sup>](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Assignments/A06) |
 
-<<<<<<< HEAD
-<sup>Last Updated: 2018-04-06 (Fri @ 11:06)</sup>
-=======
-<sup>Last Updated: 2018-04-09 (Mon @ 00:08)</sup>
->>>>>>> 208fba153978bd4b086a14ae7f0d22eee90aad8f
+<sup>Last Updated: 2018-04-10 (Tue @ 10:46)</sup>
