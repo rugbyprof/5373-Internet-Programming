@@ -12,3 +12,8 @@ This assignment will encompass everything we have learned up until now with a fe
 - Order Items
 - Process credit card
 
+### Part 1
+
+- Group
+- Register with Stripe
+- Find a theme (preferably boostrap)
