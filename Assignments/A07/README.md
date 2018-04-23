@@ -26,3 +26,9 @@ This assignment will encompass everything we have learned up until now with a fe
 
 ### Part3
 
+So far we have brain stormed on what content and functionality we need to get going. In order to acheive our goal of a somewhat complete ecommerce solution for fake candy, we need to get going on functionality. So we need to start writing some routes to handle events like registration, logging in, searching, etc, but we don't have the necessary DB tables to handle this. 
+
+https://daveismyname.blog/login-and-registration-system-with-php
+
+
+
