@@ -10,4 +10,4 @@
  | [L07](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L07) | [ Meme Text ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L07) | [ Javascript text over image](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L07) |
  | [L08](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L08) | [ Flexslider ](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L08) | [ Thumbnail viewer code](https://github.com/rugbyprof/5373-Internet-Programming/tree/master/Lectures/L08) |
 
-<sup>Last Updated: 2018-04-12 (Thu @ 11:34)</sup>
+<sup>Last Updated: 2018-04-12 (Thu @ 12:15)</sup>
