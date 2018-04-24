@@ -37,6 +37,8 @@ Routes:
 - categories
 - menu items
 
+Your job is to implement the `categories` and `menu items` routes by Thursday.
+
 
 
 
