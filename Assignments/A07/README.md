@@ -37,7 +37,22 @@ Routes:
 - categories
 - menu items
 
-Your job is to implement the `categories` and `menu items` routes by Thursday.
+Milestones:
+ 
+ - Always work on styling and adding little content items to your page to make it seem "real".
+     - For example, you can add a contact page with fake contact info, google map link, etc.
+     - You can create an "about us" page that is full of rediculously amazing statements about your company.
+ - Do not just work on routes and specific things that we discuss in class. You should be working on completing your entire site regardless of what I discuss in class. 
+ 
+ 
+ - Thursday 26 April:
+    - You should be done with a navigation (menu) and categories route.
+ - Tuesday May 1:
+    - You should have pagination done on the browse candy page.
+ - Thursday May 3:
+    - Login and registration lecture
+    
+
 
 
 
