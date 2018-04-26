@@ -50,7 +50,7 @@ Milestones:
  - Tuesday May 1:
     - You should have pagination done on the browse candy page.
  - Thursday May 3:
-    - Login and registration lecture
+    - Login and registration refresher (we did a simple on early in semester)
     
 
 
