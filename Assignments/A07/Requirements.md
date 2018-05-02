@@ -30,6 +30,9 @@ Below is a list of "user stories" as you might see them from a real client (or s
     - As a "client", I want "a shopping cart" so that "users can actually place orders".
     - As a "client", I want "the shopping cart to remember people" so that "users can have a better experience".
     
+- **Browse Page**
+    - As a "client", I want "a browse page with pagination" so that "users can browse products".
+    
 - **Stripe**
     - As a "client", I want "to place orders with stripe" so that "I can actually make money".
  
